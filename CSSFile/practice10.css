@@ -1,0 +1,13 @@
+img{
+    height: 200px;
+    border-radius: 5px;
+}
+div{
+    display: inline-block;
+    margin: 30px;
+    border: 2px double olive;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    box-shadow: 1px 3px 10px 2px;
+}

@@ -1,0 +1,37 @@
+.nevbar {
+    background-color: aquamarine;
+}
+
+.serchbar {
+    margin-top: -47px;
+    position: absolute;
+    margin-left: 250px;
+    /* width: 50px; */
+}
+
+.button {
+    margin-top: -45px;
+    position: absolute;
+    margin-left: 1380px;
+    /* padding: 10px; */
+    /* border-radius: 15px; */
+}
+
+nav ul {
+    margin-top: -62px;
+    margin-left: 800px;
+    display: flex;
+    /* text-decoration: none; */
+}
+
+nav ul li {
+    margin: 15px;
+
+}
+
+.name {
+    /* margin: 5px 0px 5px 5px; */
+    margin-left: 15px;
+
+
+}

@@ -1,0 +1,30 @@
+#maintopic{
+    color: blue;
+}
+*{
+    text-align: center;
+}
+.hedg{
+    font-family: Georgia;
+}
+.pera{
+    color: white;
+    background-color: cornflowerblue;
+}
+button{
+    background-color: purple;
+    color: azure;
+}
+button:hover{
+    background-color: yellow;
+    color: blue;
+}
+.pera:nth-of-type(odd) {
+  color: yellow;
+}
+h1:first-letter{
+color: red;
+}
+input[type="checkbox"]:checked ~ label {
+  color: darkgreen;
+}

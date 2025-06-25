@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2px">
+        <caption>Student Information</caption>
+        <tr>
+            <th rowspan="6">Info</th>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Address</th>
+        </tr>
+        <tr>
+            <th>City</th>
+            <th>House</th>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>Delhi</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>Mumbai</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td>Kolkata</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>Pune</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- Form -->
+    <div class="Form">
+        <form action="/server">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <div class="radiob">
+                <span>Sex :- </span>
+                <input type="radio" name="sex" id="gen">
+                <label for="gen">Male</label>
+                <input type="radio" name="sex" id="gen">
+                <label for="gen">Female</label>
+                <input type="radio" name="sex" id="gen">
+                <label for="gen">Other</label>
+            </div>
+            <div class="dropdoun">
+                <span>Country</span>
+                <select name="country" id="country">
+                    <option>Selectanoption</option>
+                    <option value="india">india</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Albania">Albania</option>
+                    <option value="china">china</option>
+                    <option value="cuba">cuba</option>
+                    <option value="France">France</option>
+                    <option value="Iceland">Iceland</option>
+                    <option value="iran">iran</option>
+                    <option value="Italy">Italy</option>
+                    <option value="japan">japan</option>
+                    <option value="kenya">kenya</option>
+                </select>
+            </div>
+            <div class="textbox">
+                <label for="textbox"> Massage :</label>
+                <textarea name="massage" id="textbox"></textarea>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="chec" id="chec">
+                <label for="chec">Subscribe</label>
+            </div>
+            <button>Submit</button>
+            <hr>
+            <!-- Feedback Form -->
+            <h1>Feedback Form </h1>
+            <div class="inputbox">
+                <label for="name">Name :</label>
+                <input type="text" name="name" id="name" placeholder="Write your name">
+            </div>
+            <div class="inputbox">
+                <label for="email">Email :</label>
+                <input type="email" name="name" id="email" placeholder="Write your email">
+            </div>
+            <span>Massage:</span>
+            <div class="massagebox">
+                <label for="box"></label>
+                <textarea name="massage" id="box"></textarea>
+            </div>
+            <div class="radiobutton">
+                <span>Rate us our of 5:</span>
+                <div>
+                    <input type="radio" name="reat" id="point">
+                    <label for="point">1</label>
+                </div>
+                <div>
+                    <input type="radio" name="reat" id="point">
+                    <label for="point">2</label>
+                </div>
+                <div>
+                    <input type="radio" name="reat" id="point">
+                    <label for="point">3</label>
+                </div>
+                <div>
+                    <input type="radio" name="reat" id="point">
+                    <label for="point">4</label>
+                </div>
+                <div>
+                    <input type="radio" name="reat" id="point">
+                    <label for="point">5</label>
+                </div>
+            </div>
+            <div class="button">
+                <button>Send your massage</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

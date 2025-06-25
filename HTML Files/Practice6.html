@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form1 {
+            margin: auto;
+            width: 600px;
+            text-align: center;
+            border: 2px solid;
+            padding: 10px;
+
+        }
+
+        .form1>form {
+            margin: auto;
+            border: 2px dotted;
+            width: 400px;
+            height: 200px;
+
+
+        }
+
+        .input {
+            padding: 2px;
+
+        }
+
+        button {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .form2 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form1">
+        <h1>FORM USING ALL TAG</h1>
+        <form action="https://www.instagram.com/accounts/login">
+            <h2>Instagram login</h2>
+            <div class="input">
+                <label for="username">User name :</label>
+                <input type="text" name="username" id="username" placeholder="Enter Username">
+            </div>
+            <div class="input">
+                <label for="pasword">Pasword :</label>
+                <input type="number" name="pasword" id="pasword" placeholder="Enter pasword">
+            </div>
+            <button>sign in</button>
+        </form>
+    </div>
+    <hr>
+    <div class="form1 form2">
+        <form action="https://www.google.com/search">
+            <h2>Google search bar</h2>
+            <div class="input">
+                <label for="search">Search</label>
+                <input type="text" name="q" id="search" placeholder="Google.com">
+            </div>
+            <div class="button">
+                <button>search</button>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <div class="form1 form3">
+        <form action="/server">
+            <h2>REGISTRATION FORM</h2>
+            <div class="input">
+                <input type="text" name="fname" id="name" placeholder="First Name">
+            </div>
+            <div class="input">
+                <input type="text" name="lname" id="name" placeholder="Last Name">
+            </div>
+            <span>Pless select gender </span>
+            <select name="gender" id="gendar">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <div>
+                <span>Do you agree to all terms of service</span>
+                <input type="checkbox" name="chac" id="chac">
+                <label for="chac"> Yes, I agree</label>
+            </div>
+            <button>Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
