@@ -1,37 +1,187 @@
-.nevbar {
-    background-color: aquamarine;
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.serchbar {
-    margin-top: -47px;
-    position: absolute;
-    margin-left: 250px;
-    /* width: 50px; */
-}
-
-.button {
-    margin-top: -45px;
-    position: absolute;
-    margin-left: 1380px;
-    /* padding: 10px; */
-    /* border-radius: 15px; */
-}
-
-nav ul {
-    margin-top: -62px;
-    margin-left: 800px;
+header.nevbar {
+    background-color: #74b5f7;
+    padding: 10px 20px;
     display: flex;
-    /* text-decoration: none; */
-}
-
-nav ul li {
-    margin: 15px;
-
+    justify-content: space-between;
+    gap: 10px;
+    justify-items: baseline;
 }
 
 .name {
-    /* margin: 5px 0px 5px 5px; */
-    margin-left: 15px;
+    font-size: 28px;
+    color: #f70a1a;
+    margin-bottom: 10px;
+}
+
+.serchbar {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.serchbar input {
+    padding: 8px;
+    border: 1px solid #9c5f5f;
+    border-radius: 5px;
+    /* flex: 5; */
+    /* min-width: 150px; */
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.button button {
+    padding:8px 16px;
+    background-color: #e54741;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.button button:hover {
+    background-color: #a1201c;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+}
+
+nav ul li a.nevmenu {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    /* margin-top: 50px; */
+    /* text-align: center; */
+    line-height: 2;
+}
+
+/* hr {
+    margin-top: 10px;
+    border: 0.5px solid #ccc;
+} */
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .name {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .serchbar, .button, nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    .serchbar input, .button button {
+        width: 90%;
+    }
+}
 
 
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #fafefe;
+}
+
+/* User Info */
+main div{
+    border: solid;
+    padding: 10px;
+}
+main p {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+    
+}
+
+main a.follow {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+main a.follow:hover {
+    text-decoration: underline;
+}
+
+/* Question */
+main h3 {
+    font-size: 20px;
+    color: #111;
+    margin: 5px 0 10px;
+}
+
+/* Buttons (upvote & answer) */
+main span {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+main span button {
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #e1e1e1;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+main span button:hover {
+    background-color: #ccc;
+}
+
+/* Divider */
+main hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    main h3 {
+        font-size: 18px;
+    }
+
+    main span {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    main span button {
+        width: 100%;
+    }
 }
